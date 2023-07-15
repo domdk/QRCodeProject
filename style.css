@@ -32,7 +32,6 @@ html:focus-within {
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    min-width: 100vw;
     display: grid;
     place-items: center;
     text-rendering: optimizeSpeed;
@@ -54,22 +53,14 @@ picture {
 }
 
 
-.attribution {
 
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 h1 {
     font-weight: 700;
 }
 
 .qr-code {
-    display: inline-block;
+    display: block;
     background: hsl(0, 0%, 100%);
     width: 375px;
     height: auto;
@@ -79,7 +70,7 @@ h1 {
     padding: 1.2em;
     box-shadow: 0 0 1em hsl(220, 15%, 80%);
     text-align: center;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -89,18 +80,7 @@ h1 {
     border-radius: .75em;
 }
 
-h1 {
-    color: hsl(218, 44%, 22%);
-    line-height: 1.2em;
-    font-size: 1.5em;
-    padding: .25em;
-}
 
-p {
-    color: hsl(220, 15%, 55%);
-
-    padding: 10px;
-}
 
 .qr-code-text {
     display: block;
@@ -108,4 +88,31 @@ p {
     height: auto;
     padding: 1.5em;
 
+}
+
+.qr-code-text h1 {
+    color: hsl(218, 44%, 22%);
+    line-height: 1.2em;
+    font-size: 1.5em;
+    padding: .25em;
+}
+
+.qr-code-text p {
+    color: hsl(220, 15%, 55%);
+    padding: 10px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 700;
 }
