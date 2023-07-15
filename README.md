@@ -5,3 +5,6 @@ This is the start of my upskilling journey as a Front-End Developer. I found the
 In this challenge I will be building a QR Code component as per the jpegs and style guide given in the challenge folders.
 
 Lets go!
+
+# Link to the challenge:
+https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H
